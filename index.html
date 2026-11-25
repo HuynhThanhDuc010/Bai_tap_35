@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danh sách sản phẩm</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <p class="eyebrow">CỬA HÀNG CÔNG NGHỆ</p>
+      <h1>Danh sách sản phẩm</h1>
+      <p class="subtitle">Tìm kiếm nhanh sản phẩm bạn đang quan tâm.</p>
+    </div>
+  </header>
+  <main class="container main-content">
+    <section class="search-panel" aria-label="Tìm kiếm sản phẩm">
+      <label for="searchInput">Tìm sản phẩm theo tên</label>
+      <div class="search-row">
+        <input type="search" id="searchInput" placeholder="Ví dụ: laptop, tai nghe..." autocomplete="off" aria-describedby="searchMessage">
+        <button type="button" id="clearButton">Xóa tìm kiếm</button>
+      </div>
+      <p id="searchMessage" class="search-message" role="status" aria-live="polite">Hiển thị tất cả sản phẩm.</p>
+    </section>
+    <section aria-label="Danh sách sản phẩm">
+      <div class="section-heading">
+        <h2>Sản phẩm nổi bật</h2>
+        <span id="resultCount" class="result-count"></span>
+      </div>
+      <div id="productList" class="product-grid"></div>
+    </section>
+  </main>
+  <footer class="footer"><p>Bài tập 35 – Thực hành HTML, CSS và JavaScript</p></footer>
+</body>
+</html>
